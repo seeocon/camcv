@@ -61,7 +61,7 @@ if __name__ == '__main__':
     parser.add_option("-c", "--cascade", action="store", dest="cascade", type="str", help="Haar cascade file, default %default", default = "../data/haarcascades/haarcascade_frontalface_alt.xml")
     (options, args) = parser.parse_args()
 
-    cascade = cv.Load(options.cascade)
+    cascade = cv2.CascadeClassifier('/home/pi/py/camcv/Face.xml')
     
     if len(args) != 1:
         parser.print_help()
