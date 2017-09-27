@@ -62,7 +62,7 @@ capture = cv.CaptureFromCAM(0)
  
 #faceCascade = cv.Load(&quot;haarcascades/haarcascade_frontalface_default.xml&quot;)
 #faceCascade = cv.Load(&quot;haarcascades/haarcascade_frontalface_alt2.xml&quot;)
-faceCascade = cv.Load('/home/pi/Desktop/GoPiGoLocal/faces.xml')
+faceCascade = cv.Load('/home/pi/py/camcv/Face.xml')
 #faceCascade = cv.Load(&quot;haarcascades/haarcascade_frontalface_alt_tree.xml&quot;)
  
 while (cv.WaitKey(15)==-1):
