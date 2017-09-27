@@ -62,12 +62,12 @@ capture = cv.CaptureFromCAM(0)
  
 #faceCascade = cv.Load(&quot;haarcascades/haarcascade_frontalface_default.xml&quot;)
 #faceCascade = cv.Load(&quot;haarcascades/haarcascade_frontalface_alt2.xml&quot;)
-faceCascade = cv.Load(&quot;haarcascades/haarcascade_frontalface_alt.xml&quot;)
+faceCascade = cv.Load('/home/pi/Desktop/GoPiGoLocal/faces.xml')
 #faceCascade = cv.Load(&quot;haarcascades/haarcascade_frontalface_alt_tree.xml&quot;)
  
 while (cv.WaitKey(15)==-1):
     img = cv.QueryFrame(capture)
     image = DetectFace(img, faceCascade)
-    cv.ShowImage(&quot;face detection test&quot;, image)
+    cv.ShowImage("face detection test", image)
  
 cv.ReleaseCapture(capture)
