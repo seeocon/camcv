@@ -3,7 +3,7 @@ import picamera
 import cv2
 import numpy
 
-#Create a memory stream so photos doesn't need to be saved in a file
+#Create a memory stream so photos doesn't need to be saved in a file..
 stream = io.BytesIO()
 
 #Get the picture (low resolution, so it should be quite fast)
