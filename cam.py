@@ -8,6 +8,7 @@ Python implementation by: Roman Stanchak, James Bowman
 """
 import sys
 import cv2.cv as cv
+import cv2
 from optparse import OptionParser
 
 # Parameters for haar detection
