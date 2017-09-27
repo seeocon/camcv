@@ -19,7 +19,7 @@ buff = numpy.fromstring(stream.getvalue(), dtype=numpy.uint8)
 image = cv2.imdecode(buff, 1)
 
 #Load a cascade file for detecting faces
-face_cascade = cv2.CascadeClassifier('/home/pi/Desktop/GoPiGoLocal/faces.xml')
+face_cascade = cv2.CascadeClassifier('/home/pi/py/camcv/Face.xml')
 
 #Convert to grayscale
 gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
